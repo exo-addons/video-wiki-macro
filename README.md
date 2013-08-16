@@ -4,6 +4,8 @@ Video Wiki Macro
 This addon adds a macro in the wiki which allows to insert a video in a wiki page.
 This addon has been inspired by the [XWiki Video Macro](http://extensions.xwiki.org/xwiki/bin/view/Extension/Video+Macro).
 
+Tested with eXoPlatform 4.0.1
+
 Getting Started
 ===============
 
