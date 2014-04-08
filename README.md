@@ -4,7 +4,8 @@ Video Wiki Macro
 This addon adds a macro in the wiki which allows to insert a video in a wiki page.
 This addon has been inspired by the [XWiki Video Macro](http://extensions.xwiki.org/xwiki/bin/view/Extension/Video+Macro).
 
-Tested with eXoPlatform 4.0.1
+Version 1.0 : eXoPlatform 4.0.1, 4.0.2, 4.0.3
+Version 1.0.1 : eXoPlatform 4.0.4, 4.0.5
 
 Getting Started
 ===============
@@ -26,7 +27,7 @@ Build it with
 Step 2 : Deploy 
 ---------------
 
-Prerequisite : install [eXo Platform 4.0.1 Tomcat bundle](http://www.exoplatform.com/company/en/download-exo-platform) (EXO\_TOMCAT\_ROOT\_FOLDER will be used to designate the eXo Tomcat root folder).
+Prerequisite : install [eXo Platform 4.0 Tomcat bundle](http://www.exoplatform.com/company/en/download-exo-platform) (EXO\_TOMCAT\_ROOT\_FOLDER will be used to designate the eXo Tomcat root folder).
 
 Copy the extension binary :
 
