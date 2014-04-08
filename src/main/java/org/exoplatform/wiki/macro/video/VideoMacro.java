@@ -16,10 +16,10 @@
  */
 package org.exoplatform.wiki.macro.video;
 
+import org.exoplatform.commons.embedder.Embedder;
+import org.exoplatform.commons.embedder.EmbedderFactory;
+import org.exoplatform.commons.embedder.ExoMedia;
 import org.exoplatform.commons.utils.MimeTypeResolver;
-import org.exoplatform.social.common.embedder.Embedder;
-import org.exoplatform.social.common.embedder.EmbedderFactory;
-import org.exoplatform.social.common.embedder.ExoSocialMedia;
 import org.xwiki.component.annotation.Component;
 import org.xwiki.rendering.block.Block;
 import org.xwiki.rendering.block.RawBlock;
@@ -76,11 +76,9 @@ public class VideoMacro extends AbstractMacro<VideoMacroParameters> {
       width = (int) (heightParameter * 1.5);
     }
 
-    // use eXo Social embedder service for videos on Internet (Youtube, Dailymotion, ...)
-    // Create a dependency to social, but better than duplicate classes.
-    // eXo Social embedder service should be moved to commons.
+    // use eXo embedder service for videos on Internet (Youtube, Dailymotion, ...)
     Embedder embedder = EmbedderFactory.getInstance(src);
-    ExoSocialMedia exoSocialMedia = embedder.getExoSocialMedia();
+    ExoMedia exoSocialMedia = embedder.getExoMedia();
 
     if(exoSocialMedia != null) {
       rawContent.append(exoSocialMedia.getHtml());
