@@ -8,7 +8,7 @@
   </parent>
   <groupId>org.exoplatform.addons.wiki</groupId>
   <artifactId>wiki-macro-video-parent</artifactId>
-  <version>1.1.x-SNAPSHOT</version>
+  <version>1.2.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo Wiki macro - Video</name>
   <modules>
